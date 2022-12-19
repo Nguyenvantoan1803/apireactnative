@@ -10,20 +10,6 @@ const PORT = 5000;
 app.set("view engine", "ejs");
 
 connectDB();
-
-
-// const allowlist = ['http://localhost:19006']
-// const corsOptionsDelegate = {
-//     origin: function(origin,callback){
-//         if(allowlist.indexOf(origin) !==-1){
-//             callback(null,true)
-
-//         }else{
-//             callback(new Error(`${origin} not allowed by Cors`))
-//         }
-//     },
-//     optionsSuccessStatus: 200
-// }
 app.use(cors())
 app.options('*', cors())
 
